@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  color: white;
+  font-family: "Yusei Magic", sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.doggy {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.doggy img {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+}
+
+.btn,
+.btn[disabled="false"] {
+  font-family: "Yusei Magic", sans-serif;
+  min-width: 100px;
+  appearance: none;
+  user-select: none;
+  cursor: pointer;
+  color: #2c3e50;
+  line-height: 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #667db6;
+  border: 0.2em solid #fff;
+  padding: 0.8em;
+  text-align: center;
+  transition: 0.25s box-shadow, 0.25s transform;
+  font-size: 18px;
+}
+
+.btn[disabled],
+.btn:hover {
+  box-shadow: 0 4em 0 0 #fff inset, 0em 0em 0 0 #bbb;
+  transform: translate(0.3em, 0.2em);
+  color: #000;
+}
+
+#root {
+  display: flex;
+  max-width: 100vw;
+  margin: 0px;
+  padding: 0rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
