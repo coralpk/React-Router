@@ -1,12 +1,12 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import MainSection from "./components/MainSection";
+import Navbar from "NavBar";
+import MainSection from "MainSection";
 
 function App() {
   return (
     <>
       <div id="container">
-        <Navbar />
+        <NavBar />
         <MainSection />
       </div>
     </>
